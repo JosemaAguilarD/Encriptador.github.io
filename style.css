@@ -1,0 +1,246 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.caja img{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 40px;
+top: 40px;
+
+}
+
+section{
+    position: absolute;
+    width: 577px;
+    left: 240px;
+    top: 108px;
+}
+
+#textoEntrada{
+    outline: none;
+    border: 0;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 100%;
+    background-color: #F3F5FC;
+}
+
+#textoEntrada::placeholder { color: #0A3871; }
+
+#salida{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 540px;
+    left: 570px;
+    top: -40px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+#salida img{
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 35%;
+}
+
+#salida p{
+    font-family: 'Inter';
+    margin-top: 15px;
+    font-size: 23px;
+    color: #343A40;
+    font-weight: bold;
+    text-align: center;
+}
+
+#salida #textoSalida{
+    outline: none;
+    border: 0;
+    font-family: 'Inter';
+    margin: 0 auto;
+    display: block;
+    margin-top: 11px;
+    text-align: center;
+}
+
+#textoSalida::placeholder { color: #495057; }
+
+#btnCopia{
+    display: block;
+    
+    width: 208px;
+    height: 47px;
+    background: transparent;   
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-size: 12px;
+    font-family: 'Inter';
+    transition: 0.5s all;
+    margin: 0 auto;
+    position: relative;
+    bottom: -115px;
+}
+
+#btnCopia:hover{
+    border: 1px solid #052040;
+    background-color: #cdd9e8;
+}
+
+#btnCopia:active{
+    background-color: #5f6d7f;
+    width: 212px;
+}
+
+.control{
+    position: absolute;
+    left: 240px;
+    top: 505px;
+}
+
+.control #textoMenor{
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-family: 'Inter';
+    color: #495057;
+    display: inline-block;
+}
+
+#circulo{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #495057;
+    display: inline-block;
+}
+
+#signo{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 2px;
+    color: #FFFFFF;
+}
+
+
+#encriptar{
+    width: 208px;
+    height: 47px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    transition: 0.5s all;
+}
+
+#encriptar:hover{
+    border: 1px solid #0A3871;
+    background-color: #071c36;
+}
+
+#encriptar:active{
+    background-color: #5f6d7f;
+    width: 212px;
+}
+
+#desencriptar{
+    width: 208px;
+    height: 47px;
+    background: transparent;   
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-size: 12px;
+    font-family: 'Inter';
+    margin-left: 20px;
+    transition: 0.5s all;
+}
+
+#desencriptar:hover{
+    border: 1px solid #052040;
+    background-color: #a3a9b0;
+}
+
+#desencriptar:active{
+    background-color: #5f6d7f;
+    width: 212px;
+
+}
+
+.aparece{
+    padding-top: 55px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 250px;
+}
+
+@media screen and (max-width:768px){
+    .caja{
+        margin-top: 455px;
+    }
+    #textoEntrada{
+        margin-top: 60px;
+        position: absolute;
+        left: -210px;
+        width: 250px;
+        height: 180px;
+    }
+    .caja img{
+        left: -10px;
+    }
+    .control{
+        left: 45px;
+        top: 380px;
+    }
+    #encriptar{
+        display: block;
+    }
+    #desencriptar{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #salida{
+        top: 540px;
+        left: -230px;
+        height: 150px;
+    }
+    #salida p{
+        margin-top: 30px;
+    }
+    #salida img{
+        display: none;
+    }
+    #textoSalida{
+        height: 170px;
+        background-color: transparent;
+    }
+    #btnCopia{
+        bottom: 45px;
+    }
+    .aparece{
+        padding-top:25px;
+
+    }
+
+    #btnCopia{
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+        color: #FFFFFF;
+
+    }
+}
