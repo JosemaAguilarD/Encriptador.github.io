@@ -189,10 +189,8 @@ section{
     width: 250px;
 }
 
-@media screen and (max-width:768px){
-    body{
-        width: 400px;
-    }
+@media screen and (max-width:375px){
+   
     .caja{
         margin-top: 455px;
     }
@@ -246,4 +244,5 @@ section{
         color: #FFFFFF;
 
     }
+   
 }
