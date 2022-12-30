@@ -190,6 +190,9 @@ section{
 }
 
 @media screen and (max-width:768px){
+    body{
+        width: 400px;
+    }
     .caja{
         margin-top: 455px;
     }
